@@ -1,0 +1,48 @@
+{"query_id":"v3_s01","category":"season","split":"dev","query_text":"Лучшие мужские ароматы на лето"}
+{"query_id":"v3_s02","category":"season","split":"test","query_text":"Легкий женский аромат для жаркого влажного лета"}
+{"query_id":"v3_s03","category":"season","split":"test","query_text":"Уютный унисекс-парфюм для холодной зимы"}
+{"query_id":"v3_s04","category":"season","split":"dev","query_text":"Свежий аромат на весну без сладости"}
+{"query_id":"v3_s05","category":"season","split":"test","query_text":"Древесно-пряный мужской аромат на осень"}
+{"query_id":"v3_s06","category":"season","split":"test","query_text":"Versatile fragrance for spring and summer"}
+{"query_id":"v3_o01","category":"occasion","split":"dev","query_text":"Ненавязчивый мужской аромат в офис"}
+{"query_id":"v3_o02","category":"occasion","split":"test","query_text":"Женский аромат на вечернее свидание, заметный, но не удушающий"}
+{"query_id":"v3_o03","category":"occasion","split":"test","query_text":"Унисекс аромат на каждый день и учебу"}
+{"query_id":"v3_o04","category":"occasion","split":"dev","query_text":"Формальный мужской парфюм для свадьбы осенью"}
+{"query_id":"v3_o05","category":"occasion","split":"test","query_text":"Свежий аромат для отпуска у моря"}
+{"query_id":"v3_o06","category":"occasion","split":"test","query_text":"A clean professional women's office fragrance"}
+{"query_id":"v3_p01","category":"performance","split":"dev","query_text":"Очень стойкий мужской аромат с сильным шлейфом"}
+{"query_id":"v3_p02","category":"performance","split":"test","query_text":"Тихий женский аромат близко к коже"}
+{"query_id":"v3_p03","category":"performance","split":"test","query_text":"Стойкий свежий аромат на лето без тяжелого шлейфа"}
+{"query_id":"v3_p04","category":"performance","split":"dev","query_text":"Long-lasting unisex fragrance with moderate projection"}
+{"query_id":"v3_x01","category":"exclusion","split":"dev","query_text":"Мужской аромат без ванили, табака и уда"}
+{"query_id":"v3_x02","category":"exclusion","split":"test","query_text":"Несладкий женский аромат без розы"}
+{"query_id":"v3_x03","category":"exclusion","split":"test","query_text":"Свежий унисекс парфюм без акватики"}
+{"query_id":"v3_x04","category":"exclusion","split":"dev","query_text":"Woody men's fragrance without leather or incense"}
+{"query_id":"v3_a01","category":"attributes","split":"dev","query_text":"Мужской аромат с ветивером, цитрусами и кедром"}
+{"query_id":"v3_a02","category":"attributes","split":"test","query_text":"Женский пудровый аромат с ирисом, но несладкий"}
+{"query_id":"v3_a03","category":"attributes","split":"test","query_text":"Зеленый унисекс аромат с чаем и мятой"}
+{"query_id":"v3_a04","category":"attributes","split":"dev","query_text":"Smoky woody fragrance with incense and no vanilla"}
+{"query_id":"v3_m01","category":"popularity","split":"dev","query_text":"Популярный мужской аромат, который легко найти в магазинах"}
+{"query_id":"v3_m02","category":"popularity","split":"test","query_text":"Известный женский аромат на каждый день"}
+{"query_id":"v3_m03","category":"popularity","split":"test","query_text":"Популярный унисекс аромат с хорошей стойкостью"}
+{"query_id":"v3_m04","category":"popularity","split":"dev","query_text":"Well-known fresh men's bestseller for summer"}
+{"query_id":"v3_r01","category":"reference","split":"dev","query_text":"Нужен несладкий мужской парфюм похожий на Vercahe Pour homme"}
+{"query_id":"v3_r02","category":"reference","split":"test","query_text":"Что похоже на Bleu de Chanel, но менее сладкое?"}
+{"query_id":"v3_r03","category":"reference","split":"test","query_text":"Альтернатива Dior Sauvage для офиса, не клон"}
+{"query_id":"v3_r04","category":"reference","split":"dev","query_text":"Похожий по настроению на Terre d'Hermes, но для лета"}
+{"query_id":"v3_r05","category":"reference","split":"test","query_text":"Что выбрать вместо Tom Ford Black Orchid, но легче?"}
+{"query_id":"v3_r06","category":"reference","split":"test","query_text":"Something similar to Chanel Chance Eau Tendre but less sweet"}
+{"query_id":"v3_r07","category":"reference","split":"dev","query_text":"Alternative to Acqua di Gio Profumo with strong longevity"}
+{"query_id":"v3_r08","category":"reference","split":"test","query_text":"Похожий на Lalique Encre Noire, но более универсальный"}
+{"query_id":"v3_r09","category":"reference","split":"test","query_text":"Аромат в духе Narciso Rodriguez For Her для офиса"}
+{"query_id":"v3_r10","category":"reference","split":"dev","query_text":"Что похоже на Baccarat Rouge 540, но не такое сладкое?"}
+{"query_id":"v3_c01","category":"complex","split":"dev","query_text":"Популярный стойкий мужской аромат для летнего офиса без сладости"}
+{"query_id":"v3_c02","category":"complex","split":"test","query_text":"Женский аромат для зимнего свидания с ванилью, но без табака"}
+{"query_id":"v3_c03","category":"complex","split":"test","query_text":"Недушный унисекс аромат на весну с цитрусом и ирисом"}
+{"query_id":"v3_c04","category":"complex","split":"dev","query_text":"Популярный осенний мужской аромат с мягким шлейфом без кожи"}
+{"query_id":"v3_c05","category":"complex","split":"test","query_text":"A popular long-lasting women's summer fragrance without vanilla"}
+{"query_id":"v3_c06","category":"complex","split":"test","query_text":"Fresh everyday unisex perfume with low sweetness and soft sillage"}
+{"query_id":"v3_n01","category":"negative_control","split":"dev","query_text":"Посоветуй хороший аромат"}
+{"query_id":"v3_n02","category":"negative_control","split":"test","query_text":"Хочу что-нибудь необычное и интересное"}
+{"query_id":"v3_n03","category":"negative_control","split":"test","query_text":"Homme"}
+{"query_id":"v3_n04","category":"negative_control","split":"dev","query_text":"Парфюм без конкретных предпочтений в подарок"}

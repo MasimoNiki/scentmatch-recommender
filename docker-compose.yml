@@ -1,0 +1,10 @@
+services:
+  scentmatch:
+    build:
+      context: .
+      args:
+        REQUIRE_RUNTIME_ASSETS: "1"
+        INSTALL_INFERENCE: "1"
+    image: scentmatch:0.7.0
+    ports:
+      - "8000:8000"

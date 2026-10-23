@@ -1,0 +1,68 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ScentMatch QueryIntent v2",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "query_text",
+    "language",
+    "gender",
+    "seasons",
+    "occasions",
+    "preferred_notes",
+    "excluded_notes",
+    "preferred_accords",
+    "excluded_accords",
+    "sweetness",
+    "popularity",
+    "availability",
+    "longevity",
+    "sillage",
+    "budget_mode",
+    "max_price",
+    "currency",
+    "reference"
+  ],
+  "properties": {
+    "query_text": {"type": "string", "minLength": 1},
+    "language": {"enum": ["ru", "en"]},
+    "gender": {"enum": ["any", "men", "women", "unisex"]},
+    "seasons": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {"enum": ["spring", "summer", "autumn", "winter"]}
+    },
+    "occasions": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "enum": ["office", "evening", "date", "everyday", "sport", "vacation", "formal"]
+      }
+    },
+    "preferred_notes": {"$ref": "#/$defs/stringList"},
+    "excluded_notes": {"$ref": "#/$defs/stringList"},
+    "preferred_accords": {"$ref": "#/$defs/stringList"},
+    "excluded_accords": {"$ref": "#/$defs/stringList"},
+    "sweetness": {"enum": ["any", "low", "high"]},
+    "popularity": {"enum": ["any", "high"]},
+    "availability": {"enum": ["any", "prefer_common"]},
+    "longevity": {"enum": ["any", "low", "high"]},
+    "sillage": {"enum": ["any", "soft", "strong"]},
+    "budget_mode": {
+      "enum": ["any", "affordable", "cheaper_than_reference", "max_price"]
+    },
+    "max_price": {"type": ["number", "null"], "minimum": 0},
+    "currency": {"type": ["string", "null"]},
+    "reference": {
+      "type": ["object", "null"],
+      "additionalProperties": true
+    }
+  },
+  "$defs": {
+    "stringList": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {"type": "string", "minLength": 1}
+    }
+  }
+}

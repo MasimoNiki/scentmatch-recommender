@@ -1,0 +1,20 @@
+{"schema_version":"2.0","case_id":"ref001","query_text":"Нужен аромат похожий на Versace Pour Homme","should_resolve":true,"expected_perfume_id":"2318","error_type":"exact"}
+{"schema_version":"2.0","case_id":"ref002","query_text":"Нужен популярный несладкий мужской парфюм похожий на Vercahe Pour homme","should_resolve":true,"expected_perfume_id":"2318","error_type":"typo"}
+{"schema_version":"2.0","case_id":"ref003","query_text":"Something like Bleu de Chanel Eau de Parfum but fresher","should_resolve":true,"expected_perfume_id":"25967","error_type":"exact_variant"}
+{"schema_version":"2.0","case_id":"ref004","query_text":"Ищу более дешёвый аналог Bleu de Chanel","should_resolve":true,"expected_perfume_id":"9099","error_type":"exact"}
+{"schema_version":"2.0","case_id":"ref005","query_text":"Something like Dior Sauvage, but cheaper","should_resolve":true,"expected_perfume_id":"31861","error_type":"brand_name"}
+{"schema_version":"2.0","case_id":"ref006","query_text":"Похожий на Ter d Hermes, но мягче","should_resolve":true,"expected_perfume_id":"17","error_type":"typo"}
+{"schema_version":"2.0","case_id":"ref007","query_text":"Alternative to Acqua di Gio Profumo with better longevity","should_resolve":true,"expected_perfume_id":"29727","error_type":"variant"}
+{"schema_version":"2.0","case_id":"ref008","query_text":"Аналог Club de Nuit Intense Man, но менее резкий","should_resolve":true,"expected_perfume_id":"34696","error_type":"exact"}
+{"schema_version":"2.0","case_id":"ref009","query_text":"Something like Baccarat Rouge 540 Extrait de Parfum","should_resolve":true,"expected_perfume_id":"46066","error_type":"variant"}
+{"schema_version":"2.0","case_id":"ref010","query_text":"Похожий на Tabacco Vanille Tom Ford","should_resolve":true,"expected_perfume_id":"1825","error_type":"typo"}
+{"schema_version":"2.0","case_id":"ref011","query_text":"Alternative to Aventus Cologne by Creed","should_resolve":true,"expected_perfume_id":"51692","error_type":"brand_variant"}
+{"schema_version":"2.0","case_id":"ref012","query_text":"Ищу аромат похожий на La Vie Est Belle Lancome","should_resolve":true,"expected_perfume_id":"14982","error_type":"brand_name"}
+{"schema_version":"2.0","case_id":"ref013","query_text":"Похожий на Light Blue Pour Homme Dolce Gabbana","should_resolve":true,"expected_perfume_id":"1068","error_type":"brand_name"}
+{"schema_version":"2.0","case_id":"ref014","query_text":"Something like Terre d Hermes Eau Givree","should_resolve":true,"expected_perfume_id":"72439","error_type":"variant"}
+{"schema_version":"2.0","case_id":"ref015","query_text":"Похожий на Ombre Leather Tom Ford","should_resolve":true,"expected_perfume_id":"50239","error_type":"brand_name"}
+{"schema_version":"2.0","case_id":"ref016","query_text":"Ищу аромат похожий на Homme","should_resolve":false,"expected_perfume_id":null,"error_type":"ambiguous_generic"}
+{"schema_version":"2.0","case_id":"ref017","query_text":"Нужен парфюм похожий на что-нибудь свежее","should_resolve":false,"expected_perfume_id":null,"error_type":"not_an_entity"}
+{"schema_version":"2.0","case_id":"ref018","query_text":"Лучшие мужские ароматы на лето","should_resolve":false,"expected_perfume_id":null,"error_type":"no_reference"}
+{"schema_version":"2.0","case_id":"ref019","query_text":"Хочу аромат без ванили и табака","should_resolve":false,"expected_perfume_id":null,"error_type":"no_reference"}
+{"schema_version":"2.0","case_id":"ref020","query_text":"Something similar to Eau de Parfum","should_resolve":false,"expected_perfume_id":null,"error_type":"generic_type"}

@@ -1,0 +1,163 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2026-08-18T19:02:21.758220+00:00",
+  "scentmatch_version": "0.7.0",
+  "scope": "in-process warm recommendation inference",
+  "system": {
+    "platform": "Windows-10-10.0.19045-SP0",
+    "python": "3.12.4",
+    "processor": "AMD64 Family 23 Model 104 Stepping 1, AuthenticAMD",
+    "logical_cpu_count": 12,
+    "total_ram_mb": 15706.56,
+    "device": "cpu"
+  },
+  "configuration": {
+    "query_file": "data\\eval\\ranking_queries_v3.jsonl",
+    "unique_queries": 48,
+    "repeats": 3,
+    "warmup_queries": 2,
+    "top_k": 5,
+    "seed": 42
+  },
+  "startup": {
+    "service_load_ms": 48448.64,
+    "rss_before_load_mb": 77.24,
+    "rss_after_load_mb": 873.81,
+    "rss_load_delta_mb": 796.57
+  },
+  "inference": {
+    "overall": {
+      "count": 144,
+      "mean_ms": 261.52,
+      "p50_ms": 163.68,
+      "p95_ms": 830.58,
+      "p99_ms": 1189.0,
+      "min_ms": 112.57,
+      "max_ms": 1207.33
+    },
+    "by_category": {
+      "attributes": {
+        "count": 12,
+        "mean_ms": 162.7,
+        "p50_ms": 168.14,
+        "p95_ms": 203.51,
+        "p99_ms": 217.22,
+        "min_ms": 116.51,
+        "max_ms": 220.65
+      },
+      "complex": {
+        "count": 18,
+        "mean_ms": 151.76,
+        "p50_ms": 148.39,
+        "p95_ms": 191.86,
+        "p99_ms": 214.91,
+        "min_ms": 118.45,
+        "max_ms": 220.67
+      },
+      "exclusion": {
+        "count": 12,
+        "mean_ms": 146.08,
+        "p50_ms": 145.05,
+        "p95_ms": 174.87,
+        "p99_ms": 187.26,
+        "min_ms": 123.07,
+        "max_ms": 190.35
+      },
+      "negative_control": {
+        "count": 12,
+        "mean_ms": 179.81,
+        "p50_ms": 159.3,
+        "p95_ms": 277.5,
+        "p99_ms": 373.98,
+        "min_ms": 145.13,
+        "max_ms": 398.09
+      },
+      "occasion": {
+        "count": 18,
+        "mean_ms": 184.71,
+        "p50_ms": 181.25,
+        "p95_ms": 247.45,
+        "p99_ms": 263.43,
+        "min_ms": 121.03,
+        "max_ms": 267.43
+      },
+      "performance": {
+        "count": 12,
+        "mean_ms": 194.69,
+        "p50_ms": 191.2,
+        "p95_ms": 265.52,
+        "p99_ms": 300.0,
+        "min_ms": 120.11,
+        "max_ms": 308.62
+      },
+      "popularity": {
+        "count": 12,
+        "mean_ms": 150.34,
+        "p50_ms": 148.73,
+        "p95_ms": 218.08,
+        "p99_ms": 219.45,
+        "min_ms": 112.57,
+        "max_ms": 219.8
+      },
+      "reference": {
+        "count": 30,
+        "mean_ms": 615.26,
+        "p50_ms": 697.82,
+        "p95_ms": 1188.76,
+        "p99_ms": 1203.52,
+        "min_ms": 160.46,
+        "max_ms": 1207.33
+      },
+      "season": {
+        "count": 18,
+        "mean_ms": 174.48,
+        "p50_ms": 166.53,
+        "p95_ms": 236.55,
+        "p99_ms": 244.62,
+        "min_ms": 122.92,
+        "max_ms": 246.63
+      }
+    },
+    "by_reference": {
+      "False": {
+        "count": 123,
+        "mean_ms": 170.16,
+        "p50_ms": 159.16,
+        "p95_ms": 240.35,
+        "p99_ms": 299.56,
+        "min_ms": 112.57,
+        "max_ms": 398.09
+      },
+      "True": {
+        "count": 21,
+        "mean_ms": 796.59,
+        "p50_ms": 742.75,
+        "p95_ms": 1194.2,
+        "p99_ms": 1204.71,
+        "min_ms": 491.55,
+        "max_ms": 1207.33
+      }
+    },
+    "total_seconds": 37.66,
+    "throughput_queries_per_second": 3.824
+  },
+  "memory": {
+    "rss_after_benchmark_mb": 981.5,
+    "peak_rss_mb": 981.56,
+    "peak_over_loaded_mb": 107.75
+  },
+  "model": {
+    "name": "ScentMatch",
+    "version": "0.7.0",
+    "catalog_size": 5000,
+    "embedding_model": "models/e5_finetuned",
+    "embedding_dimension": 384,
+    "link_predictor_enabled": true,
+    "commercial_use": false
+  },
+  "notes": [
+    "Warm inference excludes service/model loading time.",
+    "Latency is measured around RecommendationService.recommend, not HTTP.",
+    "Compare results only when hardware, query set, repeats and top_k match."
+  ]
+}

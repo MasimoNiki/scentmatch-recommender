@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ScentMatch relevance judgment",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["query_id", "perfume_id", "relevance", "reason", "annotator"],
+  "properties": {
+    "query_id": {"type": "string", "pattern": "^q[0-9]{3}$"},
+    "perfume_id": {"type": "string", "pattern": "^[0-9]+$"},
+    "relevance": {"type": "integer", "minimum": 0, "maximum": 3},
+    "reason": {"type": "string", "minLength": 5},
+    "annotator": {"type": "string", "minLength": 1}
+  }
+}

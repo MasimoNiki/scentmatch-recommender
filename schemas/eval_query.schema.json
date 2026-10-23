@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ScentMatch retrieval evaluation query",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version", "query_id", "query_text", "language", "split",
+    "category", "difficulty", "constraints", "annotation_status"
+  ],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "query_id": {"type": "string", "pattern": "^q[0-9]{3}$"},
+    "query_text": {"type": "string", "minLength": 20},
+    "language": {"const": "ru"},
+    "split": {"enum": ["dev", "test"]},
+    "category": {
+      "enum": ["note", "accord", "composition", "negation", "occasion", "season"]
+    },
+    "difficulty": {"enum": ["easy", "medium", "hard"]},
+    "annotation_status": {"const": "unreviewed"},
+    "constraints": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "gender", "required_notes", "preferred_notes", "excluded_notes",
+        "preferred_accords", "excluded_accords", "style_tags"
+      ],
+      "properties": {
+        "gender": {"enum": ["any", "women", "men", "unisex"]},
+        "required_notes": {"$ref": "#/$defs/stringList"},
+        "preferred_notes": {"$ref": "#/$defs/stringList"},
+        "excluded_notes": {"$ref": "#/$defs/stringList"},
+        "preferred_accords": {"$ref": "#/$defs/stringList"},
+        "excluded_accords": {"$ref": "#/$defs/stringList"},
+        "style_tags": {"$ref": "#/$defs/stringList"}
+      }
+    }
+  },
+  "$defs": {
+    "stringList": {"type": "array", "items": {"type": "string", "minLength": 1}}
+  }
+}

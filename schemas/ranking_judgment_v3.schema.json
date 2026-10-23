@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ScentMatch human ranking judgment v3",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "query_id",
+    "perfume_id",
+    "relevance",
+    "constraint_violation",
+    "evidence_quality",
+    "judge_id"
+  ],
+  "properties": {
+    "query_id": {"type": "string", "minLength": 1},
+    "perfume_id": {"type": "string", "minLength": 1},
+    "relevance": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 3,
+      "description": "0 wrong, 1 weak, 2 good, 3 excellent"
+    },
+    "constraint_violation": {
+      "type": "boolean",
+      "description": "True when any explicit hard constraint is broken"
+    },
+    "evidence_quality": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 2,
+      "description": "0 unsupported, 1 partial, 2 clearly supported"
+    },
+    "judge_id": {"type": "string", "minLength": 1},
+    "comment": {"type": "string"}
+  }
+}

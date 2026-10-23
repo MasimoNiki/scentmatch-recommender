@@ -1,0 +1,42 @@
+# IDE
+.idea/
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Python environments and caches
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+*.egg-info/
+
+# Downloaded and generated data
+data/raw/*
+!data/raw/.gitkeep
+data/interim/*
+!data/interim/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
+
+# Local artifacts. Keep only small portfolio/reproducibility outputs in Git.
+artifacts/*
+!artifacts/benchmark_v1/
+artifacts/benchmark_v1/*
+!artifacts/benchmark_v1/benchmark_report.json
+!artifacts/benchmark_v1/benchmark_report.md
+!artifacts/e5_finetuned/
+artifacts/e5_finetuned/*
+!artifacts/e5_finetuned/metadata.json
+!artifacts/link_predictor_v1/
+artifacts/link_predictor_v1/*
+!artifacts/link_predictor_v1/model.json
+models/
+*.egg-info/
+dist/
+build/

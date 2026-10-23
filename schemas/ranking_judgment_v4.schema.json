@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ScentMatch blind ranking judgment v4",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "query_id",
+    "perfume_id",
+    "judge_id",
+    "decision",
+    "constraint_violation",
+    "comment"
+  ],
+  "properties": {
+    "query_id": {"type": "string", "minLength": 1},
+    "perfume_id": {"type": "string", "minLength": 1},
+    "judge_id": {"type": "string", "minLength": 1},
+    "decision": {"enum": ["rated", "unknown"]},
+    "relevance": {"type": ["integer", "null"], "minimum": 0, "maximum": 3},
+    "constraint_violation": {"type": "boolean"},
+    "evidence_quality": {"type": ["integer", "null"], "minimum": 0, "maximum": 2},
+    "comment": {"type": "string"}
+  },
+  "allOf": [
+    {
+      "if": {"properties": {"decision": {"const": "rated"}}},
+      "then": {
+        "required": ["relevance", "evidence_quality"],
+        "properties": {
+          "relevance": {"type": "integer"},
+          "evidence_quality": {"type": "integer"}
+        }
+      }
+    }
+  ]
+}
